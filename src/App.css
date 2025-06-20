@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,105 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+body {
+  background-color: #14213d; 
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+/* App.css */
+body, html, #root {
+  background-color: #14213d !important;
+  color: white !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2{
+  color: white;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/*.container {
+ 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}*/
+
+
+/*.container {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-radius: 10px;
+  padding: 2rem;
+}*/
+.academic-card {
+  width: 286px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  color: white; 
+}
+
+
+.academic-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.academic-card .card-body {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  min-height: 48px; /* consistent title spacing */
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  min-height: 72px; /* force enough space for longest text */
+}
+.card {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+h2, .card-title {
+  color: #fca311;
+}
+.nav-hover {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.nav-hover:hover {
+  color: #0d6efd !important; /* Bootstrap primary blue */
 }
